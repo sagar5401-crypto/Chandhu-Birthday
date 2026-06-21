@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>For Chandhu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+<div id="stars"><canvas id="starCanvas"></canvas></div>
+<div class="grain"></div>
+
+<div id="brandMark">A Story for Chandhu</div>
+<div id="slideCounter"><b id="curNum">01</b> / 10</div>
+
+<div id="track">
+
+  <!-- SLIDE 1 -->
+  <section class="slide" data-i="0">
+    <div class="slide-inner">
+      <div class="s1-mark">A Birthday, Told Differently</div>
+      <div class="s1-title">
+        Some people come and go.
+        <span class="line2">A few become part of the story.</span>
+      </div>
+      <div class="swipe-hint">swipe or scroll to begin →</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 - roots -->
+  <section class="slide" data-i="1">
+    <div class="roots-wrap">
+      <svg class="roots-svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMax meet">
+        <defs>
+          <linearGradient id="rootGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d9b36c" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#d9b36c" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path class="root-path" d="M200,0 C200,40 200,40 200,70" style="transition-delay:.1s"/>
+        <path class="root-path" d="M200,70 C170,100 150,110 110,150" style="transition-delay:.3s"/>
+        <path class="root-path" d="M200,70 C230,100 250,110 290,150" style="transition-delay:.3s"/>
+        <path class="root-path" d="M110,150 C90,175 70,180 40,210" style="transition-delay:.55s"/>
+        <path class="root-path" d="M110,150 C115,180 110,190 100,225" style="transition-delay:.55s"/>
+        <path class="root-path" d="M290,150 C310,175 330,180 360,210" style="transition-delay:.55s"/>
+        <path class="root-path" d="M290,150 C285,180 290,190 300,225" style="transition-delay:.55s"/>
+        <path class="root-path" d="M200,70 C200,100 200,120 200,160" style="transition-delay:.45s"/>
+        <path class="root-path" d="M200,160 C190,185 185,195 175,220" style="transition-delay:.7s"/>
+        <path class="root-path" d="M200,160 C210,185 215,195 225,220" style="transition-delay:.7s"/>
+      </svg>
+    </div>
+    <div class="slide-inner">
+      <div class="eyebrow">Foundations</div>
+      <div class="thought glow-text">The roots are never seen,<br>yet they carry <em>the entire tree.</em></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 -->
+  <section class="slide" data-i="2">
+    <div class="slide-inner">
+      <div class="divider"></div>
+      <div class="eyebrow">On Time</div>
+      <div class="thought">Time measures years.<br><em>Memories measure lives.</em></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4 - moon -->
+  <section class="slide" data-i="3">
+    <div class="moon-wrap"><div class="moon"></div></div>
+    <div class="slide-inner">
+      <div class="eyebrow">Quiet Presence</div>
+      <div class="thought">The moon never asks for attention,<br>yet the night would feel <em>empty without it.</em></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5 - timeline -->
+  <section class="slide" data-i="4">
+    <div class="slide-inner" style="max-width:900px;">
+      <div class="eyebrow">A Shared Timeline</div>
+      <div class="thought" style="font-size:clamp(22px,3.4vw,36px);">Years of laughter, plans, and quiet support — drawn into one line.</div>
+      <div class="timeline">
+        <div class="tl-line"></div>
+        <div class="tl-points">
+          <div class="tl-point"><div class="tl-dot"></div><div class="tl-label">First<br>hello</div></div>
+          <div class="tl-point"><div class="tl-dot"></div><div class="tl-label">Late night<br>conversations</div></div>
+          <div class="tl-point"><div class="tl-dot"></div><div class="tl-label">Through the<br>hard days</div></div>
+          <div class="tl-point"><div class="tl-dot"></div><div class="tl-label">Every small<br>celebration</div></div>
+          <div class="tl-point"><div class="tl-dot"></div><div class="tl-label">Still<br>here</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6 -->
+  <section class="slide" data-i="5">
+    <div class="slide-inner">
+      <div class="divider"></div>
+      <div class="eyebrow">What Lasts</div>
+      <div class="thought">Not every treasure shines.<br><em>Some simply stay.</em></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7 - starfield -->
+  <section class="slide" data-i="6">
+    <div class="s7-stars"><canvas id="starCanvas2"></canvas></div>
+    <div class="slide-inner">
+      <div class="eyebrow">No Matter Where</div>
+      <div class="thought glow-text">Distance changes places.<br><em>Never people.</em></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8 -->
+  <section class="slide" data-i="7">
+    <div class="slide-inner">
+      <div class="divider"></div>
+      <div class="eyebrow">The Unplanned Ones</div>
+      <div class="thought">The best chapters are often written<br>by the people who <em>never planned</em><br>to be part of the story.</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9 - gratitude -->
+  <section class="slide" data-i="8">
+    <div class="slide-inner">
+      <div class="eyebrow">With Gratitude</div>
+      <div class="thought" style="font-size:clamp(22px,3.6vw,40px);">Thank you for being someone<br>I never have to explain myself to.</div>
+      <div class="gratitude-words">
+        <span class="gword">Loyalty</span>
+        <span class="gword">Patience</span>
+        <span class="gword">Honesty</span>
+        <span class="gword">Comfort</span>
+        <span class="gword">Friendship</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 10 - finale -->
+  <section class="slide" data-i="9">
+    <div class="finale-glow"></div>
+    <div class="slide-inner">
+      <div class="candle"></div>
+      <div class="finale-name">Happy Birthday, Chandhu.</div>
+      <div class="finale-text">
+        Some people come and go,<br>
+        but a few remain a lasting part of our lives.<br><br>
+        Hope we stay together<br>
+        until one leaves this Earth.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div id="navArrows">
+  <div class="arrow-btn" id="prevBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg></div>
+  <div class="arrow-btn" id="nextBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg></div>
+</div>
+
+<div id="progress"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
